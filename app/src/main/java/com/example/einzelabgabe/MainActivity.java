@@ -27,45 +27,43 @@ public class MainActivity extends AppCompatActivity {
 
         for(int i = 0; i < matrikelnummer.length(); i++) {
             char tempChar = matrikelnummer.charAt(i);
-            //int tempInt = tempChar;
-            int tempInt;
 
             if(i%2 == 0) {
                 ascii += tempChar+",";
             } else {
                 switch (tempChar) {
                     case '1':
-                        tempInt = 'a';
+                        tempChar = 'a';
                         break;
                     case '2':
-                        tempInt = 'b';
+                        tempChar = 'b';
                         break;
                     case '3':
-                        tempInt = 'c';
+                        tempChar = 'c';
                         break;
                     case '4':
-                        tempInt = 'd';
+                        tempChar = 'd';
                         break;
                     case '5':
-                        tempInt = 'e';
+                        tempChar = 'e';
                         break;
                     case '6':
-                        tempInt = 'f';
+                        tempChar = 'f';
                         break;
                     case '7':
-                        tempInt = 'g';
+                        tempChar = 'g';
                         break;
                     case '8':
-                        tempInt = 'h';
+                        tempChar = 'h';
                         break;
                     case '9':
-                        tempInt = 'i';
+                        tempChar = 'i';
                         break;
                     default:
-                        tempInt = tempChar;
+                        tempChar = 'j';
                         break;
                 }
-                ascii += tempInt+",";
+                ascii += tempChar+",";
             }
         }
 
